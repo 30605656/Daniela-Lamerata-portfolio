@@ -1,0 +1,20 @@
+@use "../utilities/variables" as v;
+
+body{
+    background-color: v.$color-fondo;
+    font-family: v.$font-principal;
+    color: v.$color-texto;
+    margin: 0;
+}
+
+h1{
+    color: v.$color-nav;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    margin: v.$espaciado;
+    text-align: justify;
+    line-height: 1.6;
+}

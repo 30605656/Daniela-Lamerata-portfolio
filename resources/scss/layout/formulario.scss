@@ -1,0 +1,22 @@
+@use "../utilities/variables" as v;
+
+form {
+    border: 1px solid #ccc;
+    padding: v.$espaciado;
+    margin: v.$espaciado;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: v.$espaciado;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: v.$color-boton;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}

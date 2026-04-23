@@ -1,0 +1,11 @@
+@use "../utilities/variables.scss" as v;
+
+.lista-servicios{
+    list-style-type: square;
+    padding: v.$espaciado;
+}
+
+.lista-servicios{
+    margin-bottom: v.$espaciado;
+    font-size: 16px;
+}

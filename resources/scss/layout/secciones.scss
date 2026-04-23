@@ -1,0 +1,11 @@
+@use "../utilities/variables" as v;
+
+section {
+    margin: v.$espaciado;
+    padding: v.$espaciado;
+}
+
+h2 {
+    color: v.$color-nav;
+    margin-bottom: v.$espaciado;
+}
