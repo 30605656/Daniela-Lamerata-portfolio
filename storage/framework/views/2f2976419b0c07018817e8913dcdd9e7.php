@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('seccion1'); ?>
 <section>
     <div>

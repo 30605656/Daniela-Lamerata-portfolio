@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
+use App\Models\Mensaje;
 
 class PortfolioController extends Controller
 {
@@ -36,7 +36,7 @@ class PortfolioController extends Controller
             'mensaje' => 'required|min:10',
         ]);
 
-        \Log::info('Mensaje de contacto:', $datos);
+        Mensaje::create($datos); //guardo en la BD
 
         return redirect('/contacto')->with('success', '¡Mensaje enviado! Me contactare pronto.');
     }
