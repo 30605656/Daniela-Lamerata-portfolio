@@ -1,23 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortfolioController;
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/sobre_mi', function () {
-    return view('sobre_mi');
-});
-
-Route::get('/servicios', function () {
-    return view('servicios');
-});
-
-Route::get('/contacto', function () {
-    return view('contacto');
-});
-
-Route::get('/formulario_basico', function () {
-    return view('formulario_basico');
-});
+Route::get('/', [PortfolioController::class, 'index']);
+Route::get('/sobre_mi', [PortfolioController::class, 'sobreMi']);
+Route::get('/servicios', [PortfolioController::class, 'servicios']);
+Route::get('/contacto', [PortfolioController::class, 'contacto']);
