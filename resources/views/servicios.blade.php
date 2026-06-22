@@ -1,28 +1,36 @@
 @extends('base.base')
 
 @section('seccion1')
-
 <section>
-    <div>
-        <h1>
-            Servicios
-        </h1>
+    <h1>Servicios</h1>
+    <p class="servicios-intro">
+        Ofrezco soluciones web a medida para personas y pequeños negocios.
+    </p>
 
-        <ul>
-            <li>
-                Creacion de paginas web y sitios web
-            </li>
-            <li>
-                Conocimientos en js, html y css
-            </li>
-            <li>
-                Conocimientos basico de poo en java y python
-            </li>
-            <li>
-                Conocimientos en python
-            </li>
-        </ul>
+    <div class="servicios-grid">
+        <div class="servicio-card">
+            <span class="servicio-icono">◈</span>
+            <h2>Sitios Web</h2>
+            <p>Desarrollo de sitios web estáticos o dinámicos, adaptados a tu negocio o proyecto personal.</p>
+        </div>
+
+        <div class="servicio-card">
+            <span class="servicio-icono">◈</span>
+            <h2>Aplicaciones Web</h2>
+            <p>Aplicaciones con base de datos, formularios, autenticación y paneles de administración.</p>
+        </div>
+
+        <div class="servicio-card">
+            <span class="servicio-icono">◈</span>
+            <h2>Frontend</h2>
+            <p>Interfaces modernas y responsivas usando HTML, CSS, SCSS y JavaScript o React.</p>
+        </div>
+
+        <div class="servicio-card">
+            <span class="servicio-icono">◈</span>
+            <h2>Backend con Laravel</h2>
+            <p>APIs y sistemas backend desarrollados con PHP y Laravel, con buenas prácticas y código limpio.</p>
+        </div>
     </div>
 </section>
-
 @endsection

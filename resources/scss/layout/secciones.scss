@@ -1,5 +1,139 @@
 @use '../utilities/variables' as v;
 
+// Hero
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hero-saludo {
+        color: v.$color-acento;
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-nombre {
+        font-size: 3.5rem;
+        color: v.$color-texto;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-titulo {
+        font-size: 2rem;
+        color: v.$color-texto-secundario;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-descripcion {
+        max-width: 500px;
+        color: v.$color-texto-secundario;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+    }
+
+    .hero-botones {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+// Botones
+.btn-principal {
+    border: 1px solid v.$color-acento;
+    color: v.$color-acento;
+    padding: 0.75rem 1.5rem;
+    font-family: v.$font-principal;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: v.$color-acento;
+        color: v.$color-fondo;
+    }
+}
+
+.btn-secundario {
+    color: v.$color-texto-secundario;
+    padding: 0.75rem 1.5rem;
+    font-family: v.$font-principal;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    transition: color 0.3s;
+
+    &:hover {
+        color: v.$color-texto;
+    }
+}
+
+// Sobre mi
+.tecnologias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0 2rem;
+}
+
+.tech-tag {
+    border: 1px solid v.$color-borde;
+    color: v.$color-acento;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    transition: border-color 0.3s;
+
+    &:hover {
+        border-color: v.$color-acento;
+    }
+}
+
+// Servicios
+.servicios-intro {
+    color: v.$color-texto-secundario;
+    margin-bottom: 2rem;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.servicio-card {
+    border: 1px solid v.$color-borde;
+    padding: 1.5rem;
+    transition: border-color 0.3s;
+
+    &:hover {
+        border-color: v.$color-acento;
+    }
+
+    .servicio-icono {
+        color: v.$color-acento;
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: v.$color-texto-secundario;
+        font-size: 0.9rem;
+    }
+}
+
+// Proyectos
 .proyecto-card {
     border: 1px solid v.$color-borde;
     padding: 1.5rem;
@@ -13,6 +147,7 @@
     h2 {
         color: v.$color-texto;
         transition: color 0.3s;
+        margin-bottom: 0.5rem;
 
         &:hover {
             color: v.$color-acento;
@@ -22,5 +157,6 @@
     p {
         color: v.$color-texto-secundario;
         margin-bottom: 0.5rem;
+        font-size: 0.9rem;
     }
 }
