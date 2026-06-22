@@ -8,7 +8,7 @@
         <?php endif; ?>
 
         <p>Email: <a href="mailto:danielalamerata1@gmail.com">danielalamerata1@gmail.com</a></p>
-        <p>Telefono: <a href="tel:3425233808">3425233808</a></p>
+        <p>Telefono WhatsApp: <a href="https://wa.me/543425233808" target="_blank">+54 3425 233808</a></p>
 
         <form action="/contacto" method="POST">
             <?php echo csrf_field(); ?>
