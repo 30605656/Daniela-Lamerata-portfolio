@@ -1,20 +1,38 @@
-@use "../utilities/variables" as v;
+@use '../utilities/variables' as v;
 
-body{
-    background-color: v.$color-fondo;
-    font-family: v.$font-principal;
-    color: v.$color-texto;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color: v.$color-nav;
-    text-align: center;
-    margin-top: 20px;
+body {
+    background-color: v.$color-fondo;
+    color: v.$color-texto;
+    font-family: v.$font-principal;
+    line-height: 1.7;
 }
 
-p {
-    margin: v.$espaciado;
-    text-align: justify;
-    line-height: 1.6;
+h1, h2, h3 {
+    font-family: v.$font-titulos;
+    color: v.$color-acento;
+    margin-bottom: v.$espaciado;
+}
+
+a {
+    color: v.$color-acento;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: v.$color-acento-hover;
+    }
+}
+
+section {
+    padding: v.$espaciado-seccion 0;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }

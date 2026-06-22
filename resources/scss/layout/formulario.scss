@@ -1,7 +1,7 @@
 @use "../utilities/variables" as v;
 
 form {
-    border: 1px solid #ccc;
+    border: 1px solid v.$color-borde;
     padding: v.$espaciado;
     margin: v.$espaciado;
 }
@@ -11,12 +11,18 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: v.$espaciado;
-    border: 1px solid #ccc;
+    border: 1px solid v.$color-borde;
+    background-color: v.$color-fondo-secundario;
+    color: v.$color-texto;
 }
 
 button {
     background-color: v.$color-boton;
-    color: white;
+    color: v.$color-fondo;   // texto oscuro sobre botón dorado
     padding: 10px 15px;
     border: none;
+}
+
+button:hover {
+    background-color: v.$color-acento-hover;
 }

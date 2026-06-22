@@ -1,13 +1,21 @@
-//colores
+// Colores
+$color-fondo: #0f0e0e;
+$color-fondo-secundario: #1a1917;
+$color-nav: #1a1917;
+$color-texto: #e8e0d0;
+$color-texto-secundario: #a89880;
+$color-acento: #c9a84c;
+$color-acento-hover: #e8c36a;
+$color-borde: #2a2825;
+$color-boton: #c9a84c;
 
-$color-fondo: #f4f6f8;
-$color-nav: #2c3e50;
-$color-texto: #333;
-$color-boton: #2c3e50;
-$color-hover: #f39c12;
+// Tipografia
+$font-principal: 'Courier New', Courier, monospace;
+$font-titulos: Georgia, 'Times New Roman', serif;
 
-//tipografia
-$font-principal: Arial, sans-serif;
-
-//espaciado
+// Espaciado
 $espaciado: 15px;
+$espaciado-seccion: 80px;
+
+// Breakpoints
+$mobile: 768px;
