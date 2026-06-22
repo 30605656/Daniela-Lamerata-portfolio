@@ -6,7 +6,7 @@
         <h1>Proyectos</h1>
 
         @forelse($proyectos as $proyecto)
-            <div>
+            <div class="proyecto-card">
                 <h2>{{ $proyecto->titulo }}</h2>
                 <p>{{ $proyecto->descripcion }}</p>
                 <p><strong>Tecnologías:</strong> {{ $proyecto->tecnologias }}</p>

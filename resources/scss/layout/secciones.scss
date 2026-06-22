@@ -1,11 +1,26 @@
-@use "../utilities/variables" as v;
+@use '../utilities/variables' as v;
 
-section {
-    margin: v.$espaciado;
-    padding: v.$espaciado;
-}
+.proyecto-card {
+    border: 1px solid v.$color-borde;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s;
 
-h2 {
-    color: v.$color-nav;
-    margin-bottom: v.$espaciado;
+    &:hover {
+        border-color: v.$color-acento;
+    }
+
+    h2 {
+        color: v.$color-texto;
+        transition: color 0.3s;
+
+        &:hover {
+            color: v.$color-acento;
+        }
+    }
+
+    p {
+        color: v.$color-texto-secundario;
+        margin-bottom: 0.5rem;
+    }
 }
