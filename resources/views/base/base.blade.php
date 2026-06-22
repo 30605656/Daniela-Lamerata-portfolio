@@ -29,10 +29,6 @@
             </li>
 
             <li>
-                <a href="/formulario_basico">Formulario</a>
-            </li>
-
-            <li>
                 <a href="/proyectos">Proyectos</a>
             </li>
         </ul>
