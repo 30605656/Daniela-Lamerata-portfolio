@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Mensaje;
-
+use Illuminate\Support\Facades\Mail;
 class PortfolioController extends Controller
 {
     public function index()
@@ -37,6 +37,17 @@ class PortfolioController extends Controller
         ]);
 
         Mensaje::create($datos); //guardo en la BD
+
+        Mail::raw(
+            "Nuevo mensaje de contacto: \n\n" .
+            "Nombre: {$datos['nombre']}\n" .
+            "Email: {$datos['email']} \n" . 
+            "Mensaje: {$datos['mensaje']}",
+            function ($message) use ($datos) {
+                $message->to('danielalamerata1@gmail.com')
+                    ->subject('Nuevo mensaje de tu portfolio - ' . $datos['nombre']);
+            }
+        );
 
         return redirect('/contacto')->with('success', '¡Mensaje enviado! Me contactare pronto.');
     }
