@@ -11,7 +11,10 @@
                 <p>{{ $proyecto->descripcion }}</p>
                 <p><strong>Tecnologías:</strong> {{ $proyecto->tecnologias }}</p>
                 @if($proyecto->url)
-                    <a href="{{ $proyecto->url }}" target="_blank">Ver proyecto</a>
+                    <a href="{{ $proyecto->url }}" target="_blank">{{ $proyecto->label_url ?? 'Ver proyecto' }}</a>
+                @endif
+                @if(!empty($proyecto->url_secundaria))
+                    <a href="{{ $proyecto->url_secundaria }}" target="_blank">{{ $proyecto->label_secundaria ?? 'Ver más' }}</a>
                 @endif
             </div>
         @empty

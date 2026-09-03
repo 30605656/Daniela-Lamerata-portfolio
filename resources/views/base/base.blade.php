@@ -13,23 +13,23 @@
     <nav>
         <ul>
             <li>
-                <a href="/">Inicio</a>
+                <a href="{{ config('app.base_path') }}/">Inicio</a>
             </li>
 
             <li>
-                <a href="/sobre_mi">Sobre_mi</a>
+                <a href="{{ config('app.base_path') }}/sobre_mi">Sobre_mi</a>
             </li>
 
             <li>
-                <a href="/servicios">Servicios</a>
+                <a href="{{ config('app.base_path') }}/servicios">Servicios</a>
             </li>
 
             <li>
-                <a href="/contacto">Contacto</a>
+                <a href="{{ config('app.base_path') }}/contacto">Contacto</a>
             </li>
 
             <li>
-                <a href="/proyectos">Proyectos</a>
+                <a href="{{ config('app.base_path') }}/proyectos">Proyectos</a>
             </li>
         </ul>
     </nav>

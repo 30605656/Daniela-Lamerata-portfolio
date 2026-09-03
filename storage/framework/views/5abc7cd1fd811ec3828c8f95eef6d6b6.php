@@ -1,6 +1,4 @@
-@extends('base.base')
-
-@section('seccion1')
+<?php $__env->startSection('seccion1'); ?>
 <section>
     <div>
         <h1>Contacto</h1>
@@ -29,4 +27,5 @@
         </form>
     </div>
 </section>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('base.base', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /home/daniela/Daniela-Lamerata-portfolio/resources/views/contacto.blade.php ENDPATH**/ ?>

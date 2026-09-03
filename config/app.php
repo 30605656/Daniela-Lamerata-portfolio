@@ -55,6 +55,13 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     /*
+     * Prefijo para los links internos al exportar a un subdirectorio
+     * (GitHub Pages). Vacío en desarrollo local.
+     * Se setea SOLO al exportar: APP_BASE_PATH=/nombre-repo php artisan export
+     */
+    'base_path' => env('APP_BASE_PATH', ''),
+
+    /*
     |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
