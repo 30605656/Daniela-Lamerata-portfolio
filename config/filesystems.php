@@ -30,6 +30,11 @@ return [
 
     'disks' => [
 
+        'export' => [
+            'driver' => 'local',
+            'root' => base_path('docs'),
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),

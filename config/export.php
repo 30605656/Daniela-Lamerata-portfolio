@@ -34,7 +34,7 @@ return [
 
     'clean_before_export' => true,
 
-    'disk' => null,
+    'disk' => 'export',
 
     'before' => [
         // 'assets' => '/usr/local/bin/yarn production',
